@@ -1,0 +1,362 @@
+<!--doctype html-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="../logo/logo.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../search-box/css/component.css" />
+    <script src="../search-box/js/modernizr.custom.js"></script>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Saira+Semi+Condensed|Teko|Titillium+Web|Tomorrow&display=swap" rel="stylesheet">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/0c15f6c73b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--TOP-->
+    <div class="top">
+        <div class="g4-logo">
+            <a href="../index.html"><img class="logo-1" src="../logo/logo-larg.png" alt="G4 Phone Shop" title="G4 Phone Shop"></a>
+        </div>
+    </div>
+    <!--Nav-->
+    <div class="nav">
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../index.html#to-brand">BRAND</a>
+                    <ul>
+                        <li>
+                            <ul class="dropdown-menu-bra">
+                                <li><a href="../index.html#to-apple">APPLE</a></li>
+                                <li><a href="../index.html#to-samsung">SAMSUNG</a></li>
+                                <li><a href="../index.html#to-oppo">OPPO</a></li>
+                                <li><a href="../index.html#to-vivo">VIVO</a></li>
+                                <li><a href="../index.html#to-huawei">HUAWEI</a></li>
+                                <li><a href="../index.html#to-xiaomi">XIAOMI</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+                <li><a href="../index.html#to-accessories">ACCESSORIES</a>
+                    <ul>
+                        <li>
+                            <ul class="dropdown-menu-ass">
+                                <li><a href="../index.html#to-accessories">CASE</a></li>
+                                <li><a href="../index.html#to-accessories">POWER BANK</a></li>
+                                <li><a href="../index.html#to-accessories">SPEAKER</a></li>
+                                <li><a href="../index.html#to-accessories">EARPHONE</a></li>
+                                <li><a href="../index.html#to-accessories">CHARGER</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+                <li><a href="contact/contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!--search-box-->
+        <div class="search-box">
+            <div class="container">
+                <div class="main clearfix">
+                    <div class="column">
+                        <div id="sb-search" class="sb-search">
+                            <form>
+                                <input class="sb-search-input" placeholder="What're you looking for?" type="text" value="" name="search" id="search">
+                                <input class="sb-search-submit" type="submit" value="">
+                                <span class="sb-icon-search"></span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
+            <script src="../search-box/js/classie.js"></script>
+            <script src="../search-box/js/uisearch.js"></script>
+            <script>
+                new UISearch(document.getElementById('sb-search'));
+            </script>
+        </div>
+        <!--Log in-->
+        <div class="sign-in">
+            <button id="sing-btn" onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:30px;"><img src="../icon/social-media/sing-in/user.png" height="30px;"></button>
+            <div id="modal-wrapper" class="modal">
+                <form class="modal-content animate" action="../index.html">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close"><i class="fas fa-times"></i></span>
+                        <img id="s-logo" src="../logo/logo.png" height="150px">
+                        <p>Login to G4 Phone Shop</p>
+                    </div>
+                    <div class="container">
+                        <i class="fa fa-user fa-2x icon-login" aria-hidden="true"></i>
+                        <input id="s-mail" type="text" placeholder="Email" name="email">
+                        <i class="fa fa-lock fa-2x icon-login" aria-hidden="true"></i>
+                        <input id="s-pass" type="password" placeholder="Password" name="password">
+                        <input id="check-box" type="checkbox" name="check-box" value="remember-me">
+                        <label id="check-box-p" for="check-box">Remember me</label>
+                        <a id="forget-pw-p" href="#">Forgot Password?</a><br>
+                        <input id="loin-btn" type="submit" value="Log In"><br>
+                        <div class="border"></div>
+                        <div class="create-acc">
+                            <span>Don't have account? &nbsp</span><span><a href="#">Create account.</a></span>
+                        </div>
+                        <div class="sing-with-socail">
+
+                            <p>Sign in with:</p>
+                            <ul>
+                                <li><a href="#"><img src="../icon/social-media/sing-in/facebook.png" alt="facebook" title="facebook"></a></li>
+                                <li><a href="#"><img src="../icon/social-media/sing-in/istragram.png" alt="Istragram" title="Istragram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <script>
+                // If user clicks anywhere outside of the modal, Modal will close
+                var modal = document.getElementById('modal-wrapper');
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <!--Top-up-botton-->
+    <div class="top-up-botton">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </div>
+    <!--contents-->
+    <div class="content">
+        <div class="about-us">
+            <p id="header">About Us</p>
+            <p id="text">&emsp;&emsp;&emsp;&emsp;G4 Phoneshop and Accessories has found in 2020 as the phone shop in Cambodia. Our website just show about informantion and price of phone. We don't have online store. You can contact Us as you can.Thank You!</p>
+        </div>
+        <div class="our-team">
+            <p id="header">Our Team</p>
+            <p>We have fours member who active with our website. You can contact them by click on facebook icon below.</p>
+            <div class="member">
+                <div class="p-lang">
+                    <div id="p-photo"><img src="../icon/peoples/male-1.png" height="100px" alt="Vouch Lang" title="Vouch Lang"></div>
+                    <p id="p-name">Narom Vouchlang</p>
+                    <p id="p-title">Designer & Code Writer</p>
+                    <p id="p-fb"><a target="_blank" href="https://www.facebook.com/lang.cool.33"><img src="../icon/social-media/facebook.png" height="35px" title="Vouchlang's FB"></a></p>
+                </div>
+                <div class="p-hour">
+                    <div id="p-photo"><img src="../icon/peoples/male-2.png" height="100px" alt="Sek Sanghour" title="Sek Sanghour"></div>
+                    <p id="p-name">Sek Sanghour</p>
+                    <p id="p-title">Designer & Code Writer</p>
+                    <p id="p-fb"><a target="_blank" href="https://www.facebook.com/seksanghour"><img src="../icon/social-media/facebook.png" height="35px" title="Sanghour's FB"></a></p>
+                </div>
+                <div class="p-heang">
+                    <div id="p-photo"><img src="../icon/peoples/male-3.png" height="100px" alt="Sao Mengheang" title="Sao Mengheang"></div>
+                    <p id="p-name">Sao Mengheang</p>
+                    <p id="p-title">Designer & Code Writer</p>
+                    <p id="p-fb"><a target="_blank" href="https://www.facebook.com/nakai07"><img src="../icon/social-media/facebook.png" height="35px" title="Mengheang's FB"></a></p>
+                </div>
+                <div class="p-neat">
+                    <div id="p-photo"><img src="../icon/peoples/female.png" height="100px" alt="Vann Panhasopheakneat" title="Vann Panhasopheakneat"></div>
+                    <p id="p-name">Vann P.S.Neat</p>
+                    <p id="p-title">Code Writer</p>
+                    <p id="p-fb"><a target="_blank" href="https://www.facebook.com/ssopheakneat.girl"><img src="../icon/social-media/facebook.png" height="35px" title="Pheakneat's FB"></a></p>
+                </div>
+                <div class="p-they">
+                    <div id="p-photo"><img src="../icon/peoples/male-4.png" height="100px" alt="Thorng Vannthey" title="Thorng Vannthey"></div>
+                    <p id="p-name">Thorng Vannthey</p>
+                    <p id="p-title">Code Writer</p>
+                    <p id="p-fb"><a target="_blank" href="https://www.facebook.com/love.singular.92"><img src="../icon/social-media/facebook.png" height="35px" title="Vannthey's FB"></a></p>
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="contact">
+            <div class="our-contacts">
+                <p id="header">Our Contacts</p>
+                <div class="c-list">
+                    <ul>
+                        <li><a target="_blank" href="https://goo.gl/maps/C7VNjojDjRidXokS8">
+                                <div class="c-address">
+                                    <div id="c-icon"><img src="../icon/contacts/address.png" height="50px" alt="Maps" title="Maps"></div>
+                                    <p id="c-des">7 Makara Street, Wat Bo Village, Sangkat Salakamreok, Siem Reap, Sieam reap</p>
+                                </div>
+                            </a></li>
+                        <li><a target="_blank" href="mailto:infor@g4phoneshop.com">
+                                <div class="c-mail">
+                                    <div id="c-icon"><img src="../icon/contacts/mail.png" height="50px" alt="Email" title="Email"></div>
+                                    <p id="c-des">infor@g4phoneshop.com</p>
+                                </div>
+                            </a></li>
+                        <li><a target="_blank" href="tel:012 345 678">
+                                <div class="c-phone">
+                                    <div id="c-icon"><img src="../icon/contacts/phone.png" height="50px" alt="Phone call" title="Phone call"></div>
+                                    <p id="c-des">+855 123 456 78 / +855 987 654 321</p>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-us">
+                <p id="header">What can we help you?</p>
+                <form>
+                    <div class="infor">
+                        <input id="box-mid" type="text" size="char" placeholder="Your Name">
+                        <input id="box-mid" type="email" size="char" placeholder="Your Email">
+                        <input id="box-mid" type="tel" placeholder="Your Phone Number">
+                        <textarea id="box-large" name="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="container-form-btn">
+                        <button class="form-btn">
+                            Send Email
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="maps">
+                <iframe class="directiont" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2178.6981970754523!2d103.86397288600786!3d13.350345014935986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf27994a8aca36384!2z4Z6f4Z624Z6A4Z6b4Z6c4Z634Z6R4Z-S4Z6Z4Z624Z6b4Z-Q4Z6ZIOGen-GfheGen-Gfj-GeouGfiuGeuOGen-GekOGfj-GeouGfgeGemeGen-GfgA!5e0!3m2!1sen!2skh!4v1583963373536!5m2!1sen!2skh" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="f-top">
+            <table>
+                <!--row1-->
+                <tr>
+                    <td><a href="#">
+                            <p id="header">G4 PHONESHOP</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="header">BRAND</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="header">ACCESSORIES</p>
+                        </a></td>
+                    <td><a target="_blank" href="/contact/contact.html">
+                            <p id="header">CONTACT US</p>
+                        </a></td>
+                </tr>
+                <!--row2-->
+                <tr>
+                    <td rowspan="6"><a>
+                            <p>Our website just show about informantion and price of phone. We don't have online store. You can contact Us as you can.Thank You!</p>
+                        </a></td>
+                    <td><a href="#to-apple">
+                            <p id="list">Apple</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="list">Case</p>
+                        </a></td>
+                    <td><a href="https://goo.gl/maps/C7VNjojDjRidXokS8" target="_blank">
+                            <pre id="list"><i class="fas fa-map-marked-alt"></i>    Siem Reap, Cambodia.</pre></a></td>
+
+                </tr>
+                <!--row3-->
+                <tr>
+                    <td><a href="#to-samsung">
+                            <p id="list">Samsung</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="list">Power Bank</p>
+                        </a></td>
+                    <td><a href="mailto:infor@g4phoneshop" target="_blank">
+                            <pre id="list"><i class="fas fa-envelope"></i>    infor@g4phoneshop.com</pre></a></td>
+                </tr>
+                <!--row4-->
+                <tr>
+                    <td><a href="#to-oppo">
+                            <p id="list">Oppo</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="list">Speaker</p>
+                        </a></td>
+                    <td><a href="tel:012 345 678" target="_blank">
+                            <pre id="list"><i class="fas fa-phone"></i>    +855 123 456 78</pre></a></td>
+                </tr>
+                <!--row5-->
+                <tr>
+                    <td><a href="#to-vivo">
+                            <p id="list">Vivo</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="list">Earphone</p>
+                        </a></td>
+                </tr>
+                <!--row6-->
+                <tr>
+                    <td><a href="#to-huawei">
+                            <p id="list">Huawei</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="list">Charger</p>
+                        </a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <!--row7-->
+                <tr>
+                    <td><a href="#to-xiaomi">
+                            <p id="list">Xiaomi</p>
+                        </a></td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="f-bottom">
+            <div class="social-media">
+                <p id="header">Follow Us on</p>
+                <ul>
+                    <li><a href="#"><img src="../icon/social-media/facebook.png" height="50px" alt="facebook" title="facebook"></a></li>
+                    <li><a href="#"><img src="../icon/social-media/IG.png" height="50px" alt="Istagram" title="Istagram"></a></li>
+                    <li><a href="#"><img src="../icon/social-media/YouTube.png" height="50px" alt="YouTube" title="YouTube"></a></li>
+                    <li><a href="#"><img src="../icon/social-media/Tweeter.png" height="50px" alt="Twitter" title="Twitter"></a></li>
+                    <li><a href="#"><img src="../icon/social-media/Pinterest.png" height="50px" alt="Pinterest" title="Pinterest"></a></li>
+                    <li><a href="#"><img src="../icon/social-media/web.png" height="50px" alt="Website" title="Website"></a></li>
+                </ul>
+            </div>
+            <div class="social-media-mail">
+                <p id="header">Subscribe Now!</p>
+                <form>
+                    <input id="box-mail" type="email" placeholder="Enter your mail" name="mail">
+                    <input id="box-sub" type="submit" value="SUBSCRIBE" name="subscribe">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <hr>
+            <p>Copyright: <a href="../index.html">g4phoneshop.com</a> &copy;2020. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

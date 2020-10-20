@@ -1,0 +1,914 @@
+<!--doctype html-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>G4 Phone Shop</title>
+    <link rel="shortcut icon" href="logo/logo.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="search-box/css/component.css" />
+    <script src="search-box/js/modernizr.custom.js"></script>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Saira+Semi+Condensed|Teko|Titillium+Web|Tomorrow&display=swap" rel="stylesheet">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/0c15f6c73b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--TOP-->
+    <div class="top">
+        <div class="g4-logo">
+            <a href="index.html"><img class="logo-1" src="logo/logo-larg.png" alt="G4 Phone Shop" title="G4 Phone Shop"></a>
+        </div>
+    </div>
+    <!--Nav-->
+    <div class="nav">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#to-brand">BRAND</a>
+                    <ul>
+                        <li>
+                            <ul class="dropdown-menu-bra">
+                                <li><a href="index.html#to-apple">APPLE</a></li>
+                                <li><a href="index.html#to-samsung">SAMSUNG</a></li>
+                                <li><a href="index.html#to-oppo">OPPO</a></li>
+                                <li><a href="index.html#to-vivo">VIVO</a></li>
+                                <li><a href="index.html#to-huawei">HUAWEI</a></li>
+                                <li><a href="index.html#to-xiaomi">XIAOMI</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+                <li><a href="index.html#to-accessories">ACCESSORIES</a>
+                    <ul>
+                        <li>
+                            <ul class="dropdown-menu-ass">
+                                <li><a href="index.html#to-accessories">CASE</a></li>
+                                <li><a href="index.html#to-accessories">POWER BANK</a></li>
+                                <li><a href="index.html#to-accessories">SPEAKER</a></li>
+                                <li><a href="index.html#to-accessories">EARPHONE</a></li>
+                                <li><a href="index.html#to-accessories">CHARGER</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+                <li><a href="contact/contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!--search-box-->
+        <div class="search-box">
+            <div class="container">
+                <div class="main clearfix">
+                    <div class="column">
+                        <div id="sb-search" class="sb-search">
+                            <form>
+                                <input class="sb-search-input" placeholder="What're you looking for?" type="text" value="" name="search" id="search">
+                                <input class="sb-search-submit" type="submit" value="">
+                                <span class="sb-icon-search"></span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
+            <script src="search-box/js/classie.js"></script>
+            <script src="search-box/js/uisearch.js"></script>
+            <script>
+                new UISearch(document.getElementById('sb-search'));
+            </script>
+        </div>
+        <!--Log in-->
+        <div class="sign-in">
+            <button id="sing-btn" onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:30px;"><img src="icon/social-media/sing-in/user.png" height="30px;"></button>
+            <div id="modal-wrapper" class="modal">
+                <form class="modal-content animate" action="index.html">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close"><i class="fas fa-times"></i></span>
+                        <img id="s-logo" src="logo/logo.png" height="150px">
+                        <p>Login to G4 Phone Shop</p>
+                    </div>
+                    <div class="container">
+                        <i class="fa fa-user fa-2x icon-login" aria-hidden="true"></i>
+                        <input id="s-mail" type="text" placeholder="Email" name="email">
+                        <i class="fa fa-lock fa-2x icon-login" aria-hidden="true"></i>
+                        <input id="s-pass" type="password" placeholder="Password" name="password">
+                        <input id="check-box" type="checkbox" name="check-box" value="remember-me">
+                        <label id="check-box-p" for="check-box">Remember me</label>
+                        <a id="forget-pw-p" href="#">Forgot Password?</a><br>
+                        <input id="loin-btn" type="submit" value="Log In" name="login"><br>
+                        <div class="border"></div>
+                        <div class="create-acc">
+                            <span>Don't have account? &nbsp</span><span><a href="#">Create account.</a></span>
+                        </div>
+                        <div class="sing-with-socail">
+
+                            <p>Sign in with:</p>
+                            <ul>
+                                <li><a href="#"><img src="icon/social-media/sing-in/facebook.png" alt="facebook" title="facebook"></a></li>
+                                <li><a href="#"><img src="icon/social-media/sing-in/istragram.png" alt="Istragram" title="Istragram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <script>
+                // If user clicks anywhere outside of the modal, Modal will close
+                var modal = document.getElementById('modal-wrapper');
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <!--Top-up-botton-->
+    <div class="top-up-botton">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 520 || document.documentElement.scrollTop > 520) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </div>
+
+    <!--content-->
+    <div class="content">
+        <!--promotion-->
+        <div class="promotion">
+            <slider>
+                <slide>
+                    <p></p>
+                </slide>
+                <slide>
+                    <p></p>
+                </slide>
+                <slide>
+                    <p></p>
+                </slide>
+                <slide>
+                    <p></p>
+                </slide>
+            </slider>
+        </div>
+        <!--special offer-->
+        <div class="special-offer">
+            <div class="title">
+                <div class="text">
+                    <a href="#">
+                        <p class="text-1">Special Offer</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+            <section class="regular slider">
+                <div>
+                    <div class="gallery">
+                        <a href="#">
+                            <img src="images/APPLE/Images/AP001.png">
+                            <p id="model">iPhone 11 Pro Max</p>
+                            <p id="dis-price"></p>
+                            <p id="price"><del></del></p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery">
+                        <a href="#">
+                            <img src="images/SAMSUNG/Images/SS001.png">
+                            <p id="model">SAMSUNG Galaxy Note 10</p>
+                            <p id="dis-price"></p>
+                            <p id="price"><del></del></p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery">
+                        <a href="#">
+                            <img src="images/HUAWEI/Images/HW001.png">
+                            <p id="model">HUAWEI P40 Pro</p>
+                            <p id="dis-price"></p>
+                            <p id="price"><del></del></p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery">
+                        <a href="#">
+                            <img src="images/HUAWEI/Images/HW007.png">
+                            <p id="model">HUAWEI P40</p>
+                            <p id="dis-price"> </p>
+                            <p id="price"><del> </del></p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery">
+                        <a href="#">
+                            <img src="images/XIAOMI/images/MI001.png">
+                            <p id="model">Xiaomi Mi Note 10 Pro</p>
+                            <p id="dis-price"> </p>
+                            <p id="price"><del> </del></p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery">
+                        <a href="#">
+                            <img src="images/XIAOMI/images/MI006.png">
+                            <p id="model">Xiaomi Mi 9 Lite</p>
+                            <p id="dis-price"> </p>
+                            <p id="price"><del> </del></p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery">
+                        <a href="#">
+                            <img src="images/OPPO/Images/SS001.png">
+                            <p id="model">Oppo R17</p>
+                            <p id="dis-price"> </p>
+                            <p id="price"><del> </del></p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery">
+                        <a href="#">
+                            <img src="images/OPPO/Images/SS003.png">
+                            <p id="model">Original Oppo K3</p>
+                            <p id="dis-price"> </p>
+                            <p id="price"><del> </del></p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery">
+                        <a href="#">
+                            <img src="images/APPLE/Images/AP013.png">
+                            <p id="model">iPhone 11</p>
+                            <p id="dis-price"> </p>
+                            <p id="price"><del> </del></p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery">
+                        <a href="#">
+                            <img src="images/APPLE/Images/AP022.png">
+                            <p id="model">iPhone 8 Plus</p>
+                            <p id="dis-price"> </p>
+                            <p id="price"><del> </del></p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+            <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+                $(document).on('ready', function() {
+                    $(".vertical-center-4").slick({
+                        dots: true,
+                        vertical: true,
+                        centerMode: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4
+                    });
+                    $(".vertical-center-3").slick({
+                        dots: true,
+                        vertical: true,
+                        centerMode: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    });
+                    $(".vertical-center-2").slick({
+                        dots: true,
+                        vertical: true,
+                        centerMode: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    });
+                    $(".vertical-center").slick({
+                        dots: true,
+                        vertical: true,
+                        centerMode: true,
+                    });
+                    $(".vertical").slick({
+                        dots: true,
+                        vertical: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 3
+                    });
+                    $(".regular").slick({
+                        dots: true,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4
+                    });
+                    $(".center").slick({
+                        dots: true,
+                        infinite: true,
+                        centerMode: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4
+                    });
+                    $(".variable").slick({
+                        dots: true,
+                        infinite: true,
+                        variableWidth: true
+                    });
+                    $(".lazy").slick({
+                        lazyLoad: 'ondemand', // ondemand progressive anticipated
+                        infinite: true
+                    });
+                });
+            </script>
+
+        </div>
+        <a name="to-brand"></a>
+        <!--Phone Brand-->
+        <div class="brand">
+            <!--apple-->
+            <a name="to-apple"></a>
+            <div class="brand-title">
+                <div class="logo">
+                    <a href="#"><img class="logo-1" src="icon/brand/apple-logo.png" alt="Apple" title="Aplle"></a>
+                </div>
+            </div>
+            <div class="apple">
+                <ul>
+                    <li><a id="ap-1" href="#"><img id="box-max-photo" src="images/APPLE/Images/AP001.png" alt="iPhone 11 pro max" title="iPhone 11 pro max">
+                            <ul>
+                                <li>
+                                    <p id="box-max-model">Iphone 11 Pro Max (512GB)</p><br>
+                                    <p id="box-max-price">$1,788.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="ap-2" href="#"><img id="box-wide-photo" src="images/APPLE/Images/AP007.png" alt="iPhone 11 Pro" title="iPhone 11 Pro">
+                            <ul>
+                                <li>
+                                    <p id="box-wide-model">Iphone 11 Pro (64GB)</p><br>
+                                    <p id="box-wide-price">$999.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="ap-3" href="#"><img id="box-small-photo" src="images/APPLE/Images/AP014.png" alt="iPhone 11" title="iPhone 11">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Iphone 11 (64GB)</p><br>
+                                    <p id="box-small-price">$795.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="ap-4" href="#"><img id="box-small-photo" src="images/APPLE/Images/AP016.png" alt="iPhone Xs Max" title="iPhone Xs Max">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Iphone XS Max (64GB)</p><br>
+                                    <p id="box-small-price">$720.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="ap-5" href="#"><img id="box-small-photo" src="images/APPLE/Images/AP020.png" alt="iPhone Xs" title="iPhone Xs">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Iphone XS (64GB)</p><br>
+                                    <p id="box-small-price">$699.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="ap-6" href="#"><img id="box-small-photo" src="images/APPLE/Images/AP021.png" alt="Iphone 8 Plus" title="Iphone 8 Plus">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Iphone 8 Plus (256GB)</p><br>
+                                    <p id="box-small-price">$530.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="see-more" target="_blank" href="brand/Iphone/1st.html">See more</a></li>
+                </ul>
+            </div>
+            <!--samsung-->
+            <a name="to-samsung"></a>
+            <div class="brand-title">
+                <div class="logo">
+                    <a href="#"><img class="logo-1" src="icon/brand/samsung-logo.png" alt="Samsung" title="Samsung"></a>
+                </div>
+            </div>
+            <div class="samsung">
+                <ul>
+                    <li><a id="ss-1" href="#"><img id="box-max-photo" src="images/SAMSUNG/Images/SS001.png" alt="SAMSUNG Galaxy Note 10" title="SAMSUNG Galaxy Note 10">
+                            <ul>
+                                <li>
+                                    <p id="box-max-model">SAMSUNG Galaxy Note 10 (256GB)</p><br>
+                                    <p id="box-max-price">508.29$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="ss-2" href="#"><img id="box-wide-photo" src="images/SAMSUNG/Images/SS006.png" alt="SAMSUNG Galaxy Note 10+" title="SAMSUNG Galaxy Note 10+">
+                            <ul>
+                                <li>
+                                    <p id="box-wide-model">SAMSUNG Galaxy Note 10+ (256GB)</p><br>
+                                    <p id="box-wide-price">$690.95</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="ss-3" href="#"><img id="box-small-photo" src="images/SAMSUNG/Images/SS009.png" alt="SAMSUNG Galaxy S20+" title="SAMSUNG Galaxy S20+">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">SAMSUNG Galaxy S20+ (128GB)</p><br>
+                                    <p id="box-small-price">$874.49</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="ss-4" href="#"><img id="box-small-photo" src="images/SAMSUNG/Images/SS010.png" alt="SAMSUNG Galaxy S20 Ultra" title="SAMSUNG Galaxy S20 Ultra">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">SAMSUNG Galaxy S20 Ultra</p><br>
+                                    <p id="box-small-price">$800.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="ss-5" href="#"><img id="box-small-photo" src="images/SAMSUNG/Images/SS011.png" alt="SAMSUNG Galaxy S20 5G" title="SAMSUNG Galaxy S20 5G">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">SAMSUNG Galaxy S20 5G</p><br>
+                                    <p id="box-small-price">$722.49</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="ss-6" href="#"><img id="box-small-photo" src="images/SAMSUNG/Images/SS019.png" alt="SAMSUNG Galaxy S10+" title="SAMSUNG Galaxy S10+">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">SAMSUNG Galaxy S10+ (128GB)</p><br>
+                                    <p id="box-small-price">$503.99</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="see-more" target="_blank" href="brand/Samsung/1st.html">See more</a></li>
+                </ul>
+            </div>
+            <!--oppo-->
+            <a name="to-oppo"></a>
+            <div class="brand-title">
+                <div class="logo">
+                    <a href="#"><img class="logo-1" src="icon/brand/oppo-logo.png" alt="Oppo-logo" title="Oppo"></a>
+                </div>
+            </div>
+            <div class="oppo">
+
+                <ul>
+                    <li><a id="iphone-11-pro-max" href="#"><img id="box-max-photo" src="images/OPPO/Images/SS011.png" height="390px;" alt="Original Oppo Find X2 Pro" title="Original Oppo Find X2 Pro">
+                            <ul>
+                                <li>
+                                    <p id="box-max-model">Original Oppo Find X2 Pro</p><br>
+                                    <p id="box-max-price">$1,559.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-11-pro" href="#"><img id="box-wide-photo" src="images/OPPO/Images/SS009.png" height="190px;" alt="Original Oppo Reno 2" title="Original Oppo Reno 2">
+                            <ul>
+                                <li>
+                                    <p id="box-wide-model">Original Oppo Reno 2</p><br>
+                                    <p id="box-wide-price">$449.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-11" href="#"><img id="box-small-photo" src="images/OPPO/Images/SS001.png" height="190px;" alt="Oppo R17" title="Oppo R17">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Oppo R17</p><br>
+                                    <p id="box-small-price">$460.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-8" href="#"><img id="box-small-photo" src="images/OPPO/Images/SS003.png" height="190px;" alt="Original Oppo K3" title="Original Oppo K3">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Original Oppo K3</p><br>
+                                    <p id="box-small-price">$411.21</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-7-plus" href="#"><img id="box-small-photo" src="images/OPPO/Images/SS013.png" height="190px;" alt="Oppo Reno" title="Oppo Reno">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Oppo Reno</p><br>
+                                    <p id="box-small-price">$529.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-8-plus" href="#"><img id="box-small-photo" src="images/OPPO/Images/SS014.png" height="190px;" alt="Oppo A7" title="Oppo A7">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Oppo A7</p><br>
+                                    <p id="box-small-price">$879.99</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="see-more" target="_blank" href="brand/Oppo/1st.html">See more</a></li>
+                </ul>
+            </div>
+            <!--vivo-->
+            <a name="to-vivo"></a>
+            <div class="brand-title">
+                <div class="logo">
+                    <a href="#"><img class="logo-1" src="icon/brand/vivo-logo.png" alt="vivo-logo" title="Vivo"></a>
+                </div>
+            </div>
+            <div class="vivo">
+                <ul>
+                    <li><a id="iphone-11-pro-max" href="#"><img id="box-max-photo" src="images/VIVO/Images/VV001.png" height="390px;" alt="Vivo z5x" title="Vivo z5x">
+                            <ul>
+                                <li>
+                                    <p id="box-max-model">Vivo z5x</p><br>
+                                    <p id="box-max-price">$219.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-11-pro" href="#"><img id="box-wide-photo" src="images/VIVO/Images/VV002.png" height="190px;" alt="Vivo z5 " title="Vivo z5 ">
+                            <ul>
+                                <li>
+                                    <p id="box-wide-model">Vivo z5</p><br>
+                                    <p id="box-wide-price">$229.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-11" href="#"><img id="box-small-photo" src="images/VIVO/Images/VV003.png" height="190px;" alt="Vivo z3x" title="Vivo z3x">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Vivo z3x</p><br>
+                                    <p id="box-small-price">$229.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-8" href="#"><img id="box-wide-photo" src="images/VIVO/Images/VV004.png" height="190px;" alt="i12">
+                            <ul>
+                                <li>
+                                    <p id="box-wide-model">Vivo Y17</p><br>
+                                    <p id="box-wide-price">$249.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-7-plus" href="#"><img id="box-small-photo" src="images/VIVO/Images/VV005.png" height="190px;" alt="i12">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Vivo Y15</p><br>
+                                    <p id="box-small-price">$119.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="see-more" target="_blank" href="brand/Vivo/1st.html">See more</a></li>
+                </ul>
+            </div>
+            <!--huawei-->
+            <a name="to-huawei"></a>
+            <div class="brand-title">
+                <div class="logo">
+                    <a href="#"><img class="logo-1" src="icon/brand/huawei-logo.png" alt="Apple" title="Aplle"></a>
+                </div>
+            </div>
+            <div class="huawei">
+                <ul>
+                    <li><a id="iphone-11-pro-max" href="#"><img id="box-max-photo" src="images/HUAWEI/Images/HW011.png" height="390px;" alt="i12p">
+                            <ul>
+                                <li>
+                                    <p id="box-max-model">HUAWEI Mate Xs</p><br>
+                                    <p id="box-max-price">2,999$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-11-pro" href="#"><img id="box-wide-photo" src="images/HUAWEI/Images/HW001.png" height="190px;" alt="i12">
+                            <ul>
+                                <li>
+                                    <p id="box-wide-model">HUAWEI P40 Pro</p><br>
+                                    <p id="box-wide-price">899$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-11" href="#"><img id="box-small-photo" src="images/HUAWEI/Images/HW008.png" height="190px;" alt="i12">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">HUAWEI P40</p><br>
+                                    <p id="box-small-price">699$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-8" href="#"><img id="box-wide-photo" src="images/HUAWEI/Images/HW012.png" height="190px;" alt="i12">
+                            <ul>
+                                <li>
+                                    <p id="box-wide-model">HUAWEI Y6p</p><br>
+                                    <p id="box-wide-price">139$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="iphone-7-plus" href="#"><img id="box-small-photo" src="images/HUAWEI/Images/HW015.png" height="190px;" alt="i12">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">HUAWEI Y5p</p><br>
+                                    <p id="box-small-price">99$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="see-more" target="_blank" href="brand/Huawei/1st.html">See more</a></li>
+                </ul>
+            </div>
+            <!--xiaomi-->
+            <a name="to-xiaomi"></a>
+            <div class="brand-title">
+                <div class="logo">
+                    <a href="#"><img class="logo-1" src="icon/brand/xiaomi-logo.png" alt="Apple" title="Aplle"></a>
+                </div>
+            </div>
+            <div class="xiaomi">
+
+                <ul>
+                    <li><a id="xm-1" href="#"><img id="box-max-photo" src="images/XIAOMI/images/MI001.png" alt="Xiaomi Mi Note 10 Pro" title="Xiaomi Mi Note 10 Pro">
+                            <ul>
+                                <li>
+                                    <p id="box-max-model">Xiaomi Mi Note 10 Pro (256GB)</p><br>
+                                    <p id="box-max-price">$559.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="xm-2" href="#"><img id="box-wide-photo" src="images/XIAOMI/images/MI003.png" alt="Xiaomi Mi 10" title="Xiaomi Mi 10">
+                            <ul>
+                                <li>
+                                    <p id="box-wide-model">Xiaomi Mi 10 (128GB)</p><br>
+                                    <p id="box-wide-price">$699.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="xm-3" href="#"><img id="box-small-photo" src="images/XIAOMI/images/MI004.png" alt="Xiaomi Mi Note 10" title="Xiaomi Mi Note 10">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Xiaomi Mi Note 10 (128GB)</p><br>
+                                    <p id="box-small-price">$437.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="xm-4" href="#"><img id="box-small-photo" src="images/XIAOMI/images/MI005.png" alt="Xiaomi 9T Pro" title="Xiaomi 9T Pro">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Xiaomi 9T Pro (128GB)</p><br>
+                                    <p id="box-small-price">$495.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="xm-5" href="#"><img id="box-small-photo" src="images/XIAOMI/images/MI006.png" alt="Mi 9 Lite" title="Mi 9 Lite">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Mi 9 Lite (128GB)</p><br>
+                                    <p id="box-small-price">$275.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="xm-6" href="#"><img id="box-small-photo" src="images/XIAOMI/images/MI009.png" alt="i12">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Redmi Note 8(32GB)</p><br>
+                                    <p id="box-small-price">$180.00</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="see-more" target="_blank" href="brand/Xiaomi/1st.html">See more</a></li>
+                </ul>
+            </div>
+            <!--accessories-->
+            <a name="to-accessories"></a>
+            <div class="brand-title">
+                <div class="text">
+                    <a href="#">
+                        <p class="text-1">Accessories</p>
+                    </a>
+                </div>
+            </div>
+            <div class="accessories">
+
+                <ul>
+                    <li><a id="acsr-1" href="#"><img id="box-max-photo" src="images/accessories/SP/JBL Flip 4 Waterproof Portable Bluetooth Speaker - Black($75).png" alt="JBL Flip 4 Waterproof Portable" title="JBL Flip 4 Waterproof Portable">
+                            <ul>
+                                <li>
+                                    <p id="box-max-model">JBL Flip 4 Waterproof Portable</p><br>
+                                    <p id="box-max-price">$75</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="acsr-2" href="#"><img id="box-wide-photo" src="images/accessories/Case/case-iphone-11-pro-max-mix-color.png" alt="Mix color Case for iPhone 11 Pro Max" title="Mix color Case for iPhone 11 Pro Max">
+                            <ul>
+                                <li>
+                                    <p id="box-wide-model">Mix color Case for iPhone 11 Pro Max</p><br>
+                                    <p id="box-wide-price">$15</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="acsr-3" href="#"><img id="box-small-photo" src="images/accessories/CG/Anker-Roav-powerwave-vehicle-10w-wireless-cherging-pad-for-iphone-and-android-70.png" height="190px;" alt="Anker Roav Powerwave" title="Anker Roav Powerwave">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Anker Roav Powerwave</p><br>
+                                    <p id="box-small-price">$70</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="acsr-4" href="#"><img id="box-small-photo" src="images/accessories/EP/Sony-MDRXB50-35.png" alt="Sony MDRXB 50" title="Sony MDRXB 50">
+                            <ul>
+                                <li>
+                                    <p id="box-small-model">Sony MDRXB 50</p><br>
+                                    <p id="box-small-price">$35</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="acsr-5" href="#"><img id="box-wide-photo" src="images/accessories/PB/TOTU-Design-Wireless-10000mAh-Power-Bank_35usd.png" alt="i12">
+                            <ul>
+                                <li>
+                                    <p id="box-wide-model">TOTU Design Wirless</p><br>
+                                    <p id="box-wide-price">$35</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="see-more" target="_blank" href="Accesories.html">See more</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <div class="f-top">
+            <table>
+                <!--row1-->
+                <tr>
+                    <td><a href="#">
+                            <p id="header">G4 PHONESHOP</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="header">BRAND</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="header">ACCESSORIES</p>
+                        </a></td>
+                    <td><a target="_blank" href="/contact/contact.html">
+                            <p id="header">CONTACT US</p>
+                        </a></td>
+                </tr>
+                <!--row2-->
+                <tr>
+                    <td rowspan="6"><a>
+                            <p>Our website just show about informantion and price of phone. We don't have online store. You can contact Us as you can.Thank You!</p>
+                        </a></td>
+                    <td><a href="#to-apple">
+                            <p id="list">Apple</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="list">Case</p>
+                        </a></td>
+                    <td><a href="https://goo.gl/maps/C7VNjojDjRidXokS8" target="_blank">
+                            <pre id="list"><i class="fas fa-map-marked-alt"></i>    Siem Reap, Cambodia.</pre></a></td>
+
+                </tr>
+                <!--row3-->
+                <tr>
+                    <td><a href="#to-samsung">
+                            <p id="list">Samsung</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="list">Power Bank</p>
+                        </a></td>
+                    <td><a href="mailto:infor@g4phoneshop" target="_blank">
+                            <pre id="list"><i class="fas fa-envelope"></i>    infor@g4phoneshop.com</pre></a></td>
+                </tr>
+                <!--row4-->
+                <tr>
+                    <td><a href="#to-oppo">
+                            <p id="list">Oppo</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="list">Speaker</p>
+                        </a></td>
+                    <td><a href="tel:012 345 678" target="_blank">
+                            <pre id="list"><i class="fas fa-phone"></i>    +855 123 456 78</pre></a></td>
+                </tr>
+                <!--row5-->
+                <tr>
+                    <td><a href="#to-vivo">
+                            <p id="list">Vivo</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="list">Earphone</p>
+                        </a></td>
+                </tr>
+                <!--row6-->
+                <tr>
+                    <td><a href="#to-huawei">
+                            <p id="list">Huawei</p>
+                        </a></td>
+                    <td><a href="#">
+                            <p id="list">Charger</p>
+                        </a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <!--row7-->
+                <tr>
+                    <td><a href="#to-xiaomi">
+                            <p id="list">Xiaomi</p>
+                        </a></td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="f-bottom">
+            <div class="social-media">
+                <p id="header">Follow Us on</p>
+                <ul>
+                    <li><a href="#"><img src="icon/social-media/facebook.png" height="50px" alt="facebook" title="facebook"></a></li>
+                    <li><a href="#"><img src="icon/social-media/IG.png" height="50px" alt="Istagram" title="Istagram"></a></li>
+                    <li><a href="#"><img src="icon/social-media/YouTube.png" height="50px" alt="YouTube" title="YouTube"></a></li>
+                    <li><a href="#"><img src="icon/social-media/Tweeter.png" height="50px" alt="Twitter" title="Twitter"></a></li>
+                    <li><a href="#"><img src="icon/social-media/Pinterest.png" height="50px" alt="Pinterest" title="Pinterest"></a></li>
+                    <li><a href="#"><img src="icon/social-media/web.png" height="50px" alt="Website" title="Website"></a></li>
+                </ul>
+            </div>
+            <div class="social-media-mail">
+                <p id="header">Subscribe Now!</p>
+                <form>
+                    <input id="box-mail" type="email" placeholder="Enter your mail" name="mail">
+                    <input id="box-sub" type="submit" value="SUBSCRIBE" name="subscribe">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <hr>
+            <p>Copyright: <a href="index.html">g4phoneshop.com</a> &copy;2020. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

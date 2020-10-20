@@ -1,0 +1,337 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>G4 Phone Shop</title>
+	<link rel="shortcut icon" href="../logo/logo.png" />
+	<link rel="stylesheet" type="text/css" href="Earphone.css">
+	<link rel="stylesheet" type="text/css" href=".././slick/slick.css">
+	<link rel="stylesheet" type="text/css" href=".././slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="../search-box/css/component.css" />
+	<script src="../search-box/js/modernizr.custom.js"></script>
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Saira+Semi+Condensed|Teko|Titillium+Web|Tomorrow&display=swap" rel="stylesheet">
+	<!--Fontawesome-->
+	<script src="https://kit.fontawesome.com/0c15f6c73b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!--TOP-->
+	<div class="top">
+		<div class="g4-logo">
+			<a href="../index.html"><img class="logo-1" src="../logo/logo-larg.png" alt="G4 Phone Shop" title="G4 Phone Shop"></a>
+		</div>
+	</div>
+	<!--Nav-->
+	<div class="nav">
+		<div class="menu">
+			<ul>
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="#to-brand">BRAND</a>
+					<ul>
+						<li><a href="../brand/Iphone/1st.html">IPHONE</a></li>
+						<li><a href="../brand/Samsung/1st.html">SAMSUNG</a></li>
+						<li><a href="../brand/Oppo/1st.html">OPPO</a></li>
+						<li><a href="../brand/Vivo/1st.html">VIVO</a></li>
+						<li><a href="../brand/Huawei/1st.html">HUAWEI</a></li>
+						<li><a href="../brand/Xiaomi/1st.html">XIAOMI</a></li>
+					</ul>
+				</li>
+				<li><a href="#to-accessories">ACCESSORIES</a>
+					<ul>
+						<li><a href="Case.html">CASE</a></li>
+						<li><a href="">POWER BANK</a></li>
+						<li><a href="Speaker.html">SPEAKER</a></li>
+						<li><a href="Earphone.html">EARPHONE</a></li>
+						<li><a href="Charger.html">CHARGER</a></li>
+					</ul>
+				</li>
+				<li><a href="../contact/contact.html">CONTACT US</a></li>
+			</ul>
+		</div>
+		<!--search-box-->
+		<div class="search-box">
+			<div class="container">
+				<div class="main clearfix">
+					<div class="column">
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="What're you looking for?" type="text" value="" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"></span>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /container -->
+			<script src="../search-box/js/classie.js"></script>
+			<script src="../search-box/js/uisearch.js"></script>
+			<script>
+				new UISearch(document.getElementById('sb-search'));
+			</script>
+		</div>
+		<!--Log in-->
+		<div class="sign-in">
+			<button id="sing-btn" onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:30px;"><img src="../icon/social-media/sing-in/user.png" height="30px;"></button>
+			<div id="modal-wrapper" class="modal">
+				<form class="modal-content animate" action="index.html">
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close"><i class="fas fa-times"></i></span>
+						<img id="s-logo" src="../logo/logo.png" height="150px">
+						<p>Login to G4 Phone Shop</p>
+					</div>
+					<div class="container">
+						<i class="fa fa-user fa-2x icon-login" aria-hidden="true"></i>
+						<input id="s-mail" type="text" placeholder="Email" name="email">
+						<i class="fa fa-lock fa-2x icon-login" aria-hidden="true"></i>
+						<input id="s-pass" type="password" placeholder="Password" name="password">
+						<input id="check-box" type="checkbox" name="check-box" value="remember-me">
+						<label id="check-box-p" for="check-box">Remember me</label>
+						<a id="forget-pw-p" href="#">Forgot Password?</a><br>
+						<input id="loin-btn" type="submit" value="Log In"><br>
+						<div class="border"></div>
+						<div class="create-acc">
+							<span>Don't have account? &nbsp</span><span><a href="#">Create account.</a></span>
+						</div>
+						<div class="sing-with-socail">
+
+							<p>Sign in with:</p>
+							<ul>
+								<li><a href="#"><img src="../icon/social-media/sing-in/facebook.png" alt="facebook" title="facebook"></a></li>
+								<li><a href="#"><img src="../icon/social-media/sing-in/instagram.png" alt="Instagram" title="Instagram"></a></li>
+								<li><a href="#"><img src="../icon/social-media/sing-in/google.png" alt="Google" title="Google"></a></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+			<script>
+				// If user clicks anywhere outside of the modal, Modal will close
+				var modal = document.getElementById('modal-wrapper');
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+					}
+				}
+			</script>
+		</div>
+	</div>
+        <div class="content">
+        <div class="brand">
+            <!--apple-->
+            <a name="to-apple"></a>
+            <div class="apple">
+                <div class="brand-aplle">
+                    <ul>
+                        <li><a href="#" target="_blank">&nbsp;POWER BANK</a></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li><a id="earphone" href="#"><img src="../images/accessories/PB/13000-Power-Bank-Alphax-Ly-polymer-Battery-at-Sokly_25usd.jpg" height="170px;" alt="Earphone" title="Alphax-Ly-Polymer-13000mAh">
+                            <ul>
+                                <li>
+                                    <p id="p-name">Alphax-Ly-Polymer</p><br>
+                                    <p id="p-price">25$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="case" href="#"><img src="../images/accessories/PB/Alpha-power-bank_13k-mAh_25usd.jpg" height="170px;" alt="i12" title="Alpha Power Bank 13k-mAh">
+                            <ul>
+                                <li>
+                                    <p id="p-name">Alpha Power Bank</p><br>
+                                    <p id="p-price">25$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="speaker" href="#"><img src="../images/accessories/PB/Anker-Power-Core.jpg" height="170px;" alt="i12" title="Anker Power Core">
+                            <ul>
+                                <li>
+                                    <p id="p-name">Anker Power Core</p><br>
+                                    <p id="p-price">45$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="gr" href="#"><img src="../images/accessories/PB/Original-samsung-power-bank.jpg" height="170px;" alt="i12" title="Original Samsung Power Bank">
+                            <ul>
+                                <li>
+                                    <p id="p-name">Samsung Power Bank</p><br>
+                                    <p id="p-price">90$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="mail" href="#"><img src="../images/accessories/PB/PB-mi_10k-mAh_18usd.jpg" height="170px;" alt="i12" title="Power Bank-mi 10k-mAh">
+                            <ul>
+                                <li>
+                                    <p id="p-name">Power Bank-mi 10k-mAh</p><br>
+                                    <p id="p-price">18$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="charger" href="#"><img src="../images/accessories/PB/power-bank-kfl-wireless-charge.jpg" height="170px;" alt="i12" title="KFl Wireless-Charge">
+                            <ul>
+                                <li>
+                                    <p id="p-name">KFl Wireless-Charge</p><br>
+                                    <p id="p-price">135$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="power-bank" href="#"><img src="../images/accessories/PB/ROMOSS-Rome-Official-40000mAh-PD-Fast-Charge-Super-Large-Capacity-Power-Bank_55usd.jpg" height="170px;" alt="i12" title="ROMOSS Rome Official-40000mAh">
+                            <ul>
+                                <li>
+                                    <p id="p-name">ROMOSS Rome Official</p><br>
+                                    <p id="p-price">55$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="more" href="#"><img src="../images/accessories/PB/Samsung-External-Battery-Pack_3.1k-mAh_22usd.png" height="170px;" alt="i12" title="Samsung External Battery Pack_3.1k-mAh">
+                            <ul>
+                                <li>
+                                    <p id="p-name">Samsung External Battery</p><br>
+                                    <p id="p-price">22$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="PC" href="#"><img src="../images/accessories/PB/TOTU-Design-Wireless-10000mAh-Power-Bank_35usd.jpg" height="170px;" alt="i12" title="TOTU Design Wireless-10000mAh">
+                            <ul>
+                                <li>
+                                    <p id="p-name">TOTU Design Wireless</p><br>
+                                    <p id="p-price">35$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li><a id="LP" href="#"><img src="../images/accessories/PB/ZMI-Power-Bank-Moderm-Router.jpg" height="170px;" alt="i12" title="ZMI Moderm Router">
+                            <ul>
+                                <li>
+                                    <p id="p-name">ZMI Moderm Router</p><br>
+                                    <p id="p-price">40$</p>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+         <!--Footer-->
+	<div class="footer">
+		<div class="f-top">
+			<table>
+				<!--row1-->
+				<tr>
+					<td><a href="#">
+							<p id="header">G4 PHONESHOP</p>
+						</a></td>
+					<td><a href="#">
+							<p id="header">BRAND</p>
+						</a></td>
+					<td><a href="#">
+							<p id="header">ACCESSORIES</p>
+						</a></td>
+					<td><a target="_blank" href="../contact/contact.html">
+							<p id="header">CONTACT US</p>
+						</a></td>
+				</tr>
+				<!--row2-->
+				<tr>
+					<td rowspan="6"><a>
+							<p>Our website just show about informantion and price of phone. We don't have online store. You can contact Us as you can.Thank You!</p>
+						</a></td>
+					<td><a href="#to-apple">
+							<p id="list">Apple</p>
+						</a></td>
+					<td><a href="#">
+							<p id="list">Case</p>
+						</a></td>
+					<td><a href="https://goo.gl/maps/C7VNjojDjRidXokS8" target="_blank">
+							<pre id="list"><i class="fas fa-map-marked-alt"></i>    Siem Reap, Cambodia.</pre></a></td>
+
+				</tr>
+				<!--row3-->
+				<tr>
+					<td><a href="#to-samsung">
+							<p id="list">Samsung</p>
+						</a></td>
+					<td><a href="#">
+							<p id="list">Power Bank</p>
+						</a></td>
+					<td><a href="mailto:infor@g4phoneshop" target="_blank">
+							<pre id="list"><i class="fas fa-envelope"></i>    infor@g4phoneshop.com</pre></a></td>
+				</tr>
+				<!--row4-->
+				<tr>
+					<td><a href="#to-oppo">
+							<p id="list">Oppo</p>
+						</a></td>
+					<td><a href="#">
+							<p id="list">Speaker</p>
+						</a></td>
+					<td><a href="tel:012 345 678" target="_blank">
+							<pre id="list"><i class="fas fa-phone"></i>    +855 123 456 78</pre></a></td>
+				</tr>
+				<!--row5-->
+				<tr>
+					<td><a href="#to-vivo">
+							<p id="list">Vivo</p>
+						</a></td>
+					<td><a href="#">
+							<p id="list">Earphone</p>
+						</a></td>
+				</tr>
+				<!--row6-->
+				<tr>
+					<td><a href="#to-huawei">
+							<p id="list">Huawei</p>
+						</a></td>
+					<td><a href="#">
+							<p id="list">Charger</p>
+						</a></td>
+					<td><a href="#"></a></td>
+				</tr>
+				<!--row7-->
+				<tr>
+					<td><a href="#to-xiaomi">
+							<p id="list">Xiaomi</p>
+						</a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="f-bottom">
+			<div class="social-media">
+				<p id="header">Follow Us on</p>
+				<ul>
+					<li><a href="#"><img src="../icon/social-media/facebook.png" height="50px" alt="facebook" title="facebook"></a></li>
+					<li><a href="#"><img src="../icon/social-media/IG.png" height="50px" alt="Instagram" title="Instagram"></a></li>
+					<li><a href="#"><img src="../icon/social-media/YouTube.png" height="50px" alt="YouTube" title="YouTube"></a></li>
+					<li><a href="#"><img src="../icon/social-media/Tweeter.png" height="50px" alt="Twitter" title="Twitter"></a></li>
+					<li><a href="#"><img src="../icon/social-media/Pinterest.png" height="50px" alt="Pinterest" title="Pinterest"></a></li>
+					<li><a href="#"><img src="../icon/social-media/web.png" height="50px" alt="Website" title="Website"></a></li>
+				</ul>
+			</div>
+			<div class="social-media-mail">
+				<p id="header">Subscribe Now!</p>
+				<form>
+					<input id="box-mail" type="email" placeholder="Enter your mail">
+					<input id="box-sub" type="submit" value="SUBSCRIBE">
+				</form>
+			</div>
+		</div>
+		<div class="copyright">
+			<hr>
+			<p>Copyright: <a href="../index.html">g4phoneshop.com</a> &copy;2020. All rights reserved.</p>
+		</div>
+	</div>
+</body>
+
+</html>
